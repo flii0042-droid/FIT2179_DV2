@@ -1,0 +1,12 @@
+file,use,main_fields,source,rows,size_kb
+protected_areas_points.csv,"Point map of Australian protected areas; size/colour can encode area, type, IUCN, or governance.","longitude, latitude, state, type_group, iucn_category, governance, area_ha, gaz_year","CAPAD 2024, DCCEEW",14492,1715.3
+protected_area_state_summary.csv,State/territory ranking by protected area count and total protected area.,"state, protected_area_count, total_area_ha, share_of_national_protected_area_pct","CAPAD 2024, DCCEEW",10,0.6
+protected_area_type_summary.csv,Compare which protected area types contribute the most land.,"type_group, protected_area_count, total_area_ha","CAPAD 2024, DCCEEW",7,0.5
+protected_area_iucn_summary.csv,Show protected area distribution by IUCN management category.,"iucn_category, protected_area_count, total_area_ha","CAPAD 2024, DCCEEW",9,0.4
+protected_area_governance_summary.csv,"Compare governance models including Commonwealth, government, joint and private governance.","governance, protected_area_count, total_area_ha","CAPAD 2024, DCCEEW",4,0.3
+protected_area_timeline.csv,Timeline of gazetted protected areas and cumulative protected area growth.,"gaz_year, new_area_count, new_area_ha, cumulative_area_ha","CAPAD 2024, DCCEEW",149,6.6
+species_status_summary_combined.csv,Compare terrestrial and marine species occurrence protection rates by EPBC status.,"environment, epbc_status, record_count, protected_record_count, protected_pct",CSIRO Data Access Portal species occurrence protection summaries,13,0.9
+terrestrial_species_region_protection_summary.csv,Find terrestrial bioregions with low protected occurrence coverage.,"region, record_count, species_count, protected_pct",CSIRO Data Access Portal species occurrence protection summaries,89,5.9
+marine_species_region_protection_summary.csv,Find marine regions with low protected occurrence coverage.,"region, record_count, species_count, protected_pct",CSIRO Data Access Portal species occurrence protection summaries,60,3.3
+threatened_communities_by_state.csv,Supplementary state-level view of threatened ecological communities.,"state, epbc_status, community_count",DCCEEW threatened ecological communities extract,21,0.5
+world_heritage_sites_australia.csv,Optional map layer for nationally recognisable conservation places.,"name, category, area_ha, latitude, longitude",UNESCO World Heritage extract,21,13.1

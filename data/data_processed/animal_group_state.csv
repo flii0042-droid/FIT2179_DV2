@@ -1,0 +1,47 @@
+group,state,species_count
+Amphibians,ACT,6
+Amphibians,NSW,29
+Amphibians,NT,1
+Amphibians,QLD,27
+Amphibians,SA,1
+Amphibians,TAS,1
+Amphibians,VIC,11
+Amphibians,WA,3
+Birds,ACT,20
+Birds,NSW,91
+Birds,NT,38
+Birds,QLD,73
+Birds,SA,87
+Birds,TAS,60
+Birds,VIC,72
+Birds,WA,66
+Fish,ACT,4
+Fish,NSW,23
+Fish,QLD,20
+Fish,SA,17
+Fish,TAS,17
+Fish,VIC,26
+Fish,WA,9
+Mammals,ACT,12
+Mammals,NSW,56
+Mammals,NT,45
+Mammals,QLD,64
+Mammals,SA,61
+Mammals,TAS,12
+Mammals,VIC,38
+Mammals,WA,68
+Reptiles,ACT,6
+Reptiles,NSW,37
+Reptiles,NT,20
+Reptiles,QLD,44
+Reptiles,SA,12
+Reptiles,TAS,8
+Reptiles,VIC,15
+Reptiles,WA,22
+Sharks & Rays,NSW,7
+Sharks & Rays,NT,8
+Sharks & Rays,QLD,9
+Sharks & Rays,SA,3
+Sharks & Rays,TAS,5
+Sharks & Rays,VIC,6
+Sharks & Rays,WA,10

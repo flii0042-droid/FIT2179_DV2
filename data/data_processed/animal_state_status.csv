@@ -1,0 +1,33 @@
+state,epbc_status,status_order,threatened_animal_species
+ACT,Critically Endangered,0,6
+NSW,Critically Endangered,0,48
+NT,Critically Endangered,0,11
+QLD,Critically Endangered,0,52
+SA,Critically Endangered,0,15
+TAS,Critically Endangered,0,12
+VIC,Critically Endangered,0,26
+WA,Critically Endangered,0,22
+ACT,Endangered,1,19
+NSW,Endangered,1,104
+NT,Endangered,1,37
+QLD,Endangered,1,91
+SA,Endangered,1,65
+TAS,Endangered,1,40
+VIC,Endangered,1,68
+WA,Endangered,1,54
+ACT,Vulnerable,2,27
+NSW,Vulnerable,2,103
+NT,Vulnerable,2,55
+QLD,Vulnerable,2,96
+SA,Vulnerable,2,80
+TAS,Vulnerable,2,58
+VIC,Vulnerable,2,73
+WA,Vulnerable,2,92
+ACT,Conservation Dependent,3,0
+NSW,Conservation Dependent,3,6
+NT,Conservation Dependent,3,1
+QLD,Conservation Dependent,3,4
+SA,Conservation Dependent,3,3
+TAS,Conservation Dependent,3,5
+VIC,Conservation Dependent,3,4
+WA,Conservation Dependent,3,4

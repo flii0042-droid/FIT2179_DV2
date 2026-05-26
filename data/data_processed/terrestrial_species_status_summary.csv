@@ -1,0 +1,8 @@
+environment,epbc_status,record_count,protected_record_count,indigenous_protected_record_count,species_count,unprotected_record_count,protected_pct,indigenous_protected_pct,status_order
+terrestrial,Extinct,1771,902,82,52,869,50.9,4.6,0
+terrestrial,Extinct in the wild,68,68,0,1,0,100.0,0.0,1
+terrestrial,Critically Endangered,63341,11998,146,233,51343,18.9,0.2,2
+terrestrial,Endangered,264393,108807,6646,557,155586,41.2,2.5,3
+terrestrial,Vulnerable,555972,178387,3091,631,377585,32.1,0.6,4
+terrestrial,Conservation Dependent,2111,192,5,7,1919,9.1,0.2,5
+terrestrial,Not listed,77986948,20795505,633439,99678,57191443,26.7,0.8,6

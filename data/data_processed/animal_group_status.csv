@@ -1,0 +1,25 @@
+group,status,species_count
+Amphibians,Critically Endangered,18
+Amphibians,Endangered,15
+Amphibians,Extinct,4
+Amphibians,Vulnerable,16
+Birds,Critically Endangered,18
+Birds,Endangered,69
+Birds,Extinct,22
+Birds,Vulnerable,77
+Fish,Critically Endangered,26
+Fish,Endangered,27
+Fish,Other,4
+Fish,Vulnerable,16
+Mammals,Critically Endangered,9
+Mammals,Endangered,47
+Mammals,Extinct,39
+Mammals,Vulnerable,57
+Reptiles,Critically Endangered,27
+Reptiles,Endangered,40
+Reptiles,Extinct,1
+Reptiles,Vulnerable,34
+Sharks & Rays,Critically Endangered,2
+Sharks & Rays,Endangered,3
+Sharks & Rays,Other,4
+Sharks & Rays,Vulnerable,5

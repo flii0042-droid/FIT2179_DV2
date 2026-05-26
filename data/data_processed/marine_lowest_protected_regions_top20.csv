@@ -1,0 +1,21 @@
+environment,region,record_count,protected_record_count,indigenous_protected_record_count,species_count,unprotected_record_count,protected_pct,indigenous_protected_pct
+marine,Tiwi,4419,0,0,1237,4419,0.0,0.0
+marine,West Cape York,48634,1015,0,3116,47619,2.1,0.0
+marine,Central Bass Strait,9514,371,0,1588,9143,3.9,0.0
+marine,WA South Coast,43836,1922,0,4734,41914,4.4,0.0
+marine,Carpentaria,49689,2582,810,1534,47107,5.2,1.6
+marine,Arnhem Wessel,15723,810,262,2401,14913,5.2,1.7
+marine,Northwest Shelf,58179,3350,0,3024,54829,5.8,0.0
+marine,Hawkesbury Shelf,409566,33434,0,9050,376132,8.2,0.0
+marine,Pilbarra (nearshore),58149,5479,0,4327,52670,9.4,0.0
+marine,Bonaparte Gulf,6642,947,2,1765,5695,14.3,0.0
+marine,Twofold Shelf,160366,23037,0,6258,137329,14.4,0.0
+marine,King Sound,2617,414,414,444,2203,15.8,15.8
+marine,Cambridge-Bonaparte,1823,289,0,512,1534,15.9,0.0
+marine,Otway,154355,27529,0,4526,126826,17.8,0.0
+marine,Torres Strait,20743,3945,30,2850,16798,19.0,0.1
+marine,Freycinet,99431,18986,0,3724,80445,19.1,0.0
+marine,Van Diemens Gulf,7426,1479,0,1343,5947,19.9,0.0
+marine,Anson Beagle,97659,19789,155,4893,77870,20.3,0.2
+marine,Arafura,16009,3284,0,1703,12725,20.5,0.0
+marine,Bruny,241990,49742,2,4762,192248,20.6,0.0

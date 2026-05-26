@@ -1,0 +1,90 @@
+environment,region,record_count,protected_record_count,indigenous_protected_record_count,species_count,unprotected_record_count,protected_pct,indigenous_protected_pct
+terrestrial,Sturt Plateau,77145,3699,90,2294,73446,4.8,0.1
+terrestrial,Mount Isa Inlier,151322,7380,115,2372,143942,4.9,0.1
+terrestrial,Finke,135400,7964,4479,2557,127436,5.9,3.3
+terrestrial,Burt Plain,92252,7559,5330,2228,84693,8.2,5.8
+terrestrial,Davenport Murchison Ranges,58063,5501,0,1962,52562,9.5,0.0
+terrestrial,Southern Volcanic Plain,2818910,271896,5582,9493,2547014,9.6,0.2
+terrestrial,Daly Basin,231447,26134,326,3520,205313,11.3,0.1
+terrestrial,Stony Plains,204050,23219,2472,2555,180831,11.4,1.2
+terrestrial,Gulf Plains,160592,18467,5378,4784,142125,11.5,3.3
+terrestrial,Avon Wheatbelt,461905,57747,66,7503,404158,12.5,0.0
+terrestrial,Murchison,139264,17553,1283,3918,121711,12.6,0.9
+terrestrial,South East Coastal Plain,7125060,969434,1578,16065,6155626,13.6,0.0
+terrestrial,Pilbara,176951,25627,0,4956,151324,14.5,0.0
+terrestrial,Mitchell Grass Downs,250565,37156,0,3799,213409,14.8,0.0
+terrestrial,South Eastern Queensland,9553026,1421464,5587,28027,8131562,14.9,0.1
+terrestrial,Darling Riverine Plains,559314,97032,106,4454,462282,17.3,0.0
+terrestrial,Tasmanian Northern Slopes,193424,33995,0,5539,159429,17.6,0.0
+terrestrial,Central Arnhem,23901,4387,4387,2046,19514,18.4,18.4
+terrestrial,Ord Victoria Plain,151879,29427,185,2983,122452,19.4,0.1
+terrestrial,Gawler,259941,51034,0,3694,208907,19.6,0.0
+terrestrial,Tasmanian Northern Midlands,125559,26456,0,3798,99103,21.1,0.0
+terrestrial,Nandewar,684368,148927,0,6192,535441,21.8,0.0
+terrestrial,Einasleigh Uplands,492009,107148,2315,9294,384861,21.8,0.5
+terrestrial,Jarrah Forest,658827,147238,0,10099,511589,22.3,0.0
+terrestrial,Cobar Peneplain,400998,91392,1642,3872,309606,22.8,0.4
+terrestrial,Swan Coastal Plain,1261105,292162,0,10379,968943,23.2,0.0
+terrestrial,Sydney Basin,9038596,2114951,0,23111,6923645,23.4,0.0
+terrestrial,Brigalow Belt North,1067578,251439,0,12025,816139,23.6,0.0
+terrestrial,Victorian Midlands,2952944,699432,0,10721,2253512,23.7,0.0
+terrestrial,NSW South Western Slopes,2040138,490133,0,8925,1550005,24.0,0.0
+terrestrial,Central Mackay Coast,317313,80427,0,9588,236886,25.3,0.0
+terrestrial,Coolgardie,150973,38537,0,4741,112436,25.5,0.0
+terrestrial,Wet Tropics,2008796,522667,70839,20084,1486129,26.0,3.5
+terrestrial,Desert Uplands,72635,18884,0,3066,53751,26.0,0.0
+terrestrial,Ben Lomond,52748,13781,0,4380,38967,26.1,0.0
+terrestrial,Victoria Bonaparte,312072,82745,701,5180,229327,26.5,0.2
+terrestrial,Carnarvon,147441,39346,0,5324,108095,26.7,0.0
+terrestrial,Geraldton Sandplains,142477,39138,0,6109,103339,27.5,0.0
+terrestrial,Brigalow Belt South,1979885,547471,0,14208,1432414,27.7,0.0
+terrestrial,Eyre Yorke Block,1145760,325570,9284,7848,820190,28.4,0.8
+terrestrial,Flinders Lofty Block,1997270,578157,4980,10419,1419113,28.9,0.2
+terrestrial,Broken Hill Complex,132788,38753,0,2544,94035,29.2,0.0
+terrestrial,King,133962,39715,199,4721,94247,29.6,0.1
+terrestrial,NSW North Coast,3126724,938024,521,18136,2188700,30.0,0.0
+terrestrial,Gascoyne,47374,14331,7482,2456,33043,30.3,15.8
+terrestrial,Mallee,110951,34459,0,5122,76492,31.1,0.0
+terrestrial,South Eastern Highlands,6919993,2223486,0,21043,4696507,32.1,0.0
+terrestrial,Channel Country,328118,109675,0,3215,218443,33.4,0.0
+terrestrial,Tasmanian South East,712411,249178,2246,11427,463233,35.0,0.3
+terrestrial,Cape York Peninsula,795976,282334,5785,14193,513642,35.5,0.7
+terrestrial,Kanmantoo,747094,270668,0,7243,476426,36.2,0.0
+terrestrial,MacDonnell Ranges,395955,146212,48,3397,249743,36.9,0.0
+terrestrial,Tiwi Cobourg,106547,39521,0,3321,67026,37.1,0.0
+terrestrial,Riverina,2835386,1060454,343,7473,1774932,37.4,0.0
+terrestrial,South East Corner,2063939,778803,0,14020,1285136,37.7,0.0
+terrestrial,Warren,200783,76545,0,6111,124238,38.1,0.0
+terrestrial,Esperance Plains,242542,94327,0,6560,148215,38.9,0.0
+terrestrial,Murray Darling Depression,3024474,1256014,664,9899,1768460,41.5,0.0
+terrestrial,Darwin Coastal,1011227,425731,3295,7106,585496,42.1,0.3
+terrestrial,New England Tablelands,910566,389244,6736,9794,521322,42.7,0.7
+terrestrial,Gulf Fall and Uplands,169654,73372,16346,3698,96282,43.2,9.6
+terrestrial,Naracoorte Coastal Plain,783340,338949,0,6729,444391,43.3,0.0
+terrestrial,Great Victoria Desert,140571,63442,11055,2973,77129,45.1,7.9
+terrestrial,Simpson Strzelecki Dunefields,175538,81478,0,2491,94060,46.4,0.0
+terrestrial,Central Kimberley,98705,46633,6207,2691,52072,47.2,6.3
+terrestrial,Tanami,105006,49684,49684,2185,55322,47.3,47.3
+terrestrial,Yalgoo,53343,25532,1365,3251,27811,47.9,2.6
+terrestrial,Dampierland,490577,240114,139816,4484,250463,48.9,28.5
+terrestrial,Furneaux,312855,152851,3718,8211,160004,48.9,1.2
+terrestrial,Indian Tropical Islands,16084,8077,0,2495,8007,50.2,0.0
+terrestrial,Tasmanian Southern Ranges,152083,77025,0,7132,75058,50.6,0.0
+terrestrial,Gulf Coastal,52301,26455,9499,2475,25846,50.6,18.2
+terrestrial,Little Sandy Desert,14888,7928,4235,1385,6960,53.3,28.4
+terrestrial,Pine Creek,531339,291570,0,5040,239769,54.9,0.0
+terrestrial,Arnhem Coast,187557,107213,107213,4938,80344,57.2,57.2
+terrestrial,Gibson Desert,12849,7366,5419,1058,5483,57.3,42.2
+terrestrial,Hampton,32818,19159,0,1262,13659,58.4,0.0
+terrestrial,Nullarbor,61652,36673,12382,1978,24979,59.5,20.1
+terrestrial,Mulga Lands,576618,344659,207,4051,231959,59.8,0.0
+terrestrial,Tasmanian Central Highlands,71168,43837,0,4465,27331,61.6,0.0
+terrestrial,Central Ranges,66965,42394,42394,2283,24571,63.3,63.3
+terrestrial,Northern Kimberley,108475,70545,39637,4944,37930,65.0,36.5
+terrestrial,Great Sandy Desert,116097,77794,19424,2803,38303,67.0,16.7
+terrestrial,Pacific Subtropical Islands,72413,49694,0,3934,22719,68.6,0.0
+terrestrial,Australian Alps,507347,359865,0,7280,147482,70.9,0.0
+terrestrial,Tasmanian West,82891,63218,0,5119,19673,76.3,0.0
+terrestrial,Arnhem Plateau,113336,102761,20764,3192,10575,90.7,18.3
+terrestrial,Subantarctic Islands,38228,38228,0,606,0,100.0,0.0
+terrestrial,Coral Sea,9193,9193,0,778,0,100.0,0.0

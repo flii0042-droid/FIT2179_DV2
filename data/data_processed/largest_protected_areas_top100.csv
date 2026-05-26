@@ -1,0 +1,101 @@
+pa_id,name,state,type,type_group,iucn_category,area_ha,area_km2,longitude,latitude
+CWTH_IPA51,Southern Tanami,NT,Indigenous Protected Area,Indigenous protected area,VI,10154858.36,101548.58,130.8784124,-21.42053319
+CWTH_IPA17,Ngaanyatjarra,WA,Indigenous Protected Area,Indigenous protected area,VI,9973603.27,99736.03,127.42691529,-25.12474574
+CWTH_IPA79,Anangu Tjutaku,WA,Indigenous Protected Area,Indigenous protected area,VI,9750511.49,97505.11,127.34664247,-28.97870944
+CWTH_IPA54,Birriliburu,WA,Indigenous Protected Area,Indigenous protected area,VI,6110153.65,61101.54,123.12934739,-24.94416303
+CWTH_IPA70,Katiti Petermann,NT,Indigenous Protected Area,Indigenous protected area,VI,5044023.83,50440.24,130.28532191,-25.0676863
+CWTH_IPA78,Ngadju,WA,Indigenous Protected Area,Indigenous protected area,VI,4399298.57,43992.99,123.0633905,-31.44828207
+CWTH_IPA67,Kiwirrkurra,WA,Indigenous Protected Area,Indigenous protected area,VI,4267664.48,42676.64,127.5009145,-22.87341
+CWTH_IPA23,Northern Tanami,NT,Indigenous Protected Area,Indigenous protected area,VI,4003654.47,40036.54,131.07343806,-19.10284759
+CWTH_IPA77,Ngururrpa,WA,Indigenous Protected Area,Indigenous protected area,VI,2962988.12,29629.88,128.1335932,-21.35844301
+SA_1281_1,Munga-Thirri—Simpson Desert,SA,National Park,National park,VI,2915857.08,29158.57,137.29180033,-26.79306669
+CWTH_IPA68,Nyangumarta Warrarn,WA,Indigenous Protected Area,Indigenous protected area,VI,2616042.34,26160.42,122.09772222,-20.38692724
+WA_30490,Great Victoria Desert,WA,Nature Reserve,Nature reserve,Ia,2417121.65,24171.22,128.17598151,-29.65341032
+CWTH_IPA64,Karajarri,WA,Indigenous Protected Area,Indigenous protected area,VI,2396405.08,23964.05,122.67340569,-19.250385
+SA_0008,Mamungari,SA,Conservation Park,Conservation park/reserve,Ia,2134622.03,21346.22,130.00147798,-28.43241507
+SA_0247,Yellabinna,SA,Regional Reserve,Regional reserve,VI,2010035.3,20100.35,132.68237338,-31.16311296
+SA_0246,Nullarbor,SA,Regional Reserve,Regional reserve,VI,1927982.96,19279.83,130.54227763,-30.8910863
+CWTH_06,Kakadu,NT,National Park (Commonwealth),National park,II,1911121.92,19111.22,132.43907442,-12.97884735
+WA_34606,Gibson Desert,WA,Nature Reserve,Nature reserve,Ia,1842053.06,18420.53,125.50132751,-24.91558566
+CWTH_IPA74,South-East Arnhem Land,NT,Indigenous Protected Area,Indigenous protected area,VI,1819609.55,18196.1,135.18467817,-14.09213657
+CWTH_IPA58,Wilinggin,WA,Indigenous Protected Area,Indigenous protected area,V,1675896.23,16758.96,125.6609627,-16.0733381
+CWTH_IPA7,Watarru,SA,Indigenous Protected Area,Indigenous protected area,VI,1657025.3,16570.25,129.76362626,-27.2919245
+CWTH_IPA24,Warlu Jilajaa Jumu,WA,Indigenous Protected Area,Indigenous protected area,VI,1616605.51,16166.06,126.12887534,-20.45911892
+CWTH_IPA82,Martu,WA,Indigenous Protected Area,Indigenous protected area,IV,1597253.93,15972.54,123.92026487,-22.15709781
+CWTH_IPA32,Warddeken,NT,Indigenous Protected Area,Indigenous protected area,VI,1370495.55,13704.96,133.60099312,-12.88825989
+SA_0227,Kati Thanda-Lake Eyre,SA,National Park,National park,VI,1350741.32,13507.41,137.51036045,-28.53651085
+SA_0010,Innamincka,SA,Regional Reserve,Regional reserve,VI,1347466.45,13474.66,140.43387127,-27.31628214
+WA_34607,Karlamilyi,WA,National Park,National park,II,1283729.17,12837.29,122.73731901,-22.3325199
+SA_0253,Tallaringa,SA,Conservation Park,Conservation park/reserve,VI,1270972.61,12709.73,133.41791173,-28.78534654
+CWTH_IPA43,Apara - Makiri - Punti,SA,Indigenous Protected Area,Indigenous protected area,VI,1107522.73,11075.23,131.05692958,-26.66499104
+CWTH_IPA71,Ganalanga-Mindibirrina,NT,Indigenous Protected Area,Indigenous protected area,VI,1093373.98,10933.74,137.55873759,-18.1480859
+CWTH_IPA60,Balanggarra,WA,Indigenous Protected Area,Indigenous protected area,VI,1090904.65,10909.05,127.6741258,-14.90198199
+CWTH_IPA8,Walalkara,SA,Indigenous Protected Area,Indigenous protected area,VI,1070591.55,10705.92,131.82728049,-27.53017495
+QLD_1083MGT001,Munga-Thirri,QLD,National Park,National park,II,1014431.67,10144.32,138.35411691,-25.56754969
+SA_1079_1,Nullarbor,SA,Wilderness Protection Area,Other,Ib,897688.4,8976.88,130.42476896,-31.31541916
+CWTH_IPA44,Antara - Sandy Bore,SA,Indigenous Protected Area,Indigenous protected area,VI,845325.47,8453.25,132.47877196,-27.5337127
+NT_PA92,Judbarra / Gregory,NT,National Park,National park,V,839526.58,8395.27,130.35427094,-16.37469497
+SA_0011,Strzelecki,SA,Regional Reserve,Regional reserve,VI,811853.37,8118.53,139.63467209,-28.81976579
+WA_36957,Dundas,WA,Nature Reserve,Nature reserve,Ia,785183.33,7851.83,122.72376855,-32.40500261
+CWTH_IPA58,Wilinggin,WA,Indigenous Protected Area,Indigenous protected area,VI,763015.05,7630.15,127.45052318,-16.27034411
+CWTH_IPA42,Uunguu,WA,Indigenous Protected Area,Indigenous protected area,VI,759459.1,7594.59,126.13921558,-14.57793994
+WA_34720,Neale Junction,WA,Nature Reserve,Nature reserve,Ia,724490.63,7244.91,126.00138655,-28.33242553
+SA_0228,Witjira,SA,National Park,National park,VI,717353.49,7173.53,135.90225867,-26.36965407
+SA_1281_1,Munga-Thirri—Simpson Desert,SA,National Park,National park,Ia,689578.99,6895.79,137.87625036,-26.24798579
+NSW_N0018,Kosciuszko,NSW,National Park,National park,II,688944.64,6889.45,148.37601603,-36.01464148
+AWC_8,Kalamurina,SA,Private Nature Reserve,Nature reserve,II,676324.37,6763.24,137.62736204,-27.80044464
+VIC_3320,Murray - Sunset,VIC,National Park,National park,II,665846.82,6658.47,141.627735,-34.81552181
+VIC_3319,Alpine,VIC,National Park,National park,II,662436.51,6624.37,147.06115001,-37.02981908
+TAS_50252,Southwest,TAS,National Park,National park,II,628616.58,6286.17,146.19382792,-43.1821697
+WA_30082,Karijini,WA,National Park,National park,II,624428.0,6244.28,118.27438579,-22.96831778
+CWTH_IPA59,Dambimangari,WA,Indigenous Protected Area,Indigenous protected area,VI,617210.65,6172.11,125.01332991,-15.664435
+WA_54224,Matuwa Kurrara Kurrara,WA,National Park,National park,II,609321.05,6093.21,121.70509089,-25.70647131
+CWTH_IPA33,Djelk,NT,Indigenous Protected Area,Indigenous protected area,VI,607985.49,6079.85,134.27661514,-12.43557667
+WA_27632,Nuytsland,WA,Nature Reserve,Nature reserve,Ia,607381.02,6073.81,124.74391865,-32.83919226
+CWTH_IPA82,Martu,WA,Indigenous Protected Area,Indigenous protected area,III,594015.75,5940.16,123.77123879,-21.96477114
+WA_27164,Prince Regent,WA,National Park,National park,II,584817.35,5848.17,125.25628093,-15.54314816
+CWTH_IPA69,Matuwa and Kurrara-Kurrara,WA,Indigenous Protected Area,Indigenous protected area,V,583354.46,5833.54,121.70509089,-25.70647129
+SA_0003,Lake Torrens,SA,National Park,National park,VI,568759.17,5687.59,137.64847918,-30.63715032
+WA_28538,Ord River Regeneration Reserve,WA,5(1)(h) Reserve,Other,IV,568059.26,5680.59,128.4801065,-17.9094763
+CWTH_IPA37,Kalka - Pipalyatjara,SA,Indigenous Protected Area,Indigenous protected area,VI,558506.48,5585.06,129.37842193,-26.35213857
+CWTH_IPA54,Birriliburu,WA,Indigenous Protected Area,Indigenous protected area,III,557199.06,5571.99,124.35000304,-24.2851367
+SA_0004,Lake Gairdner,SA,National Park,National park,VI,556894.25,5568.94,135.85489906,-31.49769915
+QLD_1071RYI001,Rinyirru (Lakefield),QLD,National Park Aboriginal,Indigenous protected area,II,543930.93,5439.31,144.01967862,-15.01203833
+QLD_0663DMT001,Diamantina,QLD,National Park,National park,II,511216.17,5112.16,141.42297868,-23.79944363
+NSW_N0051,Wollemi,NSW,National Park,National park,Ib,505561.85,5055.62,150.54670649,-32.97501847
+SA_0799,Yellabinna,SA,Wilderness Protection Area,Other,Ib,502977.11,5029.77,133.53470693,-30.98136433
+QLD_NR4339,Mount Windsor,QLD,Nature Refuge,Other,VI,490423.75,4904.24,141.94830805,-23.44181585
+WA_54417,Burringurrah,WA,National Park,National park,II,482603.13,4826.03,116.68628074,-24.62014113
+CWTH_IPA21,Laynhapuy,NT,Indigenous Protected Area,Indigenous protected area,VI,478248.15,4782.48,136.20965256,-12.86850301
+QLD_0342STA001,Staaten River,QLD,National Park,National park,II,468791.09,4687.91,142.73648323,-16.60018402
+CWTH_IPA6,Yalata,SA,Indigenous Protected Area,Indigenous protected area,V,464396.66,4643.97,131.48605695,-31.47908011
+TAS_50240,Franklin-Gordon Wild Rivers,TAS,National Park,National park,II,463565.89,4635.66,145.96077903,-42.46079678
+WA_32853,Drysdale River,WA,National Park,National park,II,447673.31,4476.73,127.04620063,-14.92471341
+CWTH_IPA15,Mount Willoughby,SA,Indigenous Protected Area,Indigenous protected area,VI,420683.08,4206.83,134.18535454,-28.41978782
+CWTH_IPA80,Olkola,QLD,Indigenous Protected Area,Indigenous protected area,II,416115.67,4161.16,143.11800088,-15.55693944
+NF_SA3,Witchelina Nature Reserve,SA,Private Nature Reserve,Nature reserve,Ia,414734.3,4147.34,137.93305906,-30.14504272
+WA_40628,Toolonga,WA,Nature Reserve,Nature reserve,Ia,404090.81,4040.91,114.96407017,-26.99935373
+CWTH_N7044,Moolgoolool,WA,NRS Addition - Gazettal in Progress,Other,II,401844.7,4018.45,119.57842644,-25.9291194
+WA_46235,R 46235,WA,Conservation Park,Conservation park/reserve,II,390954.81,3909.55,125.09520272,-16.93452462
+QLD_0343OYA001,Oyala Thumotang,QLD,National Park Aboriginal,Indigenous protected area,II,381283.86,3812.84,142.79936389,-13.57844898
+CWTH_IPA16,Paruku,WA,Indigenous Protected Area,Indigenous protected area,VI,374157.65,3741.58,127.57429947,-19.93754527
+QLD_1092OLN001,Olkola,QLD,National Park Aboriginal,Indigenous protected area,II,373588.71,3735.89,143.11800088,-15.55693944
+NT_PA131,Limmen,NT,National Park,National park,V,369734.23,3697.34,135.23467255,-15.46935225
+VIC_3309,Wyperfeld,VIC,National Park,National park,II,359855.2,3598.55,141.80163257,-35.60112936
+CWTH_IPA57,Girringun,QLD,Indigenous Protected Area,Indigenous protected area,III,353570.5,3535.7,145.79908869,-18.35097023
+NSW_N0032,Sturt,NSW,National Park,National park,II,345565.7,3455.66,141.82437215,-29.2161532
+QLD_0607CWY001,Currawinya,QLD,National Park,National park,II,343867.49,3438.67,144.49113868,-28.50557159
+SA_0006,Yumbarra,SA,Conservation Park,Conservation park/reserve,VI,325935.33,3259.35,133.55778795,-31.71362281
+WA_36271,Yeo Lake,WA,Nature Reserve,Nature reserve,Ia,321764.67,3217.65,124.33089263,-28.01858512
+AWC_11,Mornington,WA,Private Nature Reserve,Nature reserve,II,321304.09,3213.04,126.46027434,-17.33638189
+CWTH_IPA31,Angas Downs,NT,Indigenous Protected Area,Indigenous protected area,VI,320384.74,3203.85,132.15660801,-24.88129889
+QLD_0029AAA001,Apudthama,QLD,National Park Aboriginal,Indigenous protected area,II,319258.27,3192.58,142.63294908,-11.37363354
+WA_36936,Karroun Hill,WA,Nature Reserve,Nature reserve,Ia,309648.22,3096.48,118.25386746,-29.9245946
+WA_34605,Plumridge Lakes,WA,Nature Reserve,Nature reserve,Ia,308939.4,3089.39,125.04307331,-29.52391647
+CWTH_IPA73,Marthakal,NT,Indigenous Protected Area,Indigenous protected area,VI,306252.76,3062.53,135.63221,-12.24017766
+QLD_0019CAR001,Carnarvon,QLD,National Park,National park,II,301340.24,3013.4,148.08629345,-25.03636209
+QLD_0193LHZ001,Girringun,QLD,National Park,National park,II,300459.54,3004.6,145.75583504,-18.34827454
+AWC_4,Charnley River,WA,Private Nature Reserve,Nature reserve,II,300059.56,3000.6,125.28508797,-16.48382188
+NT_PA92,Judbarra / Gregory,NT,National Park,National park,V,294828.03,2948.28,130.24477874,-16.98544788
+CWTH_N7094,Wanna,WA,NRS Addition - Gazettal in Progress,Other,II,289035.61,2890.36,116.75774333,-23.71322958
+WA_31737,Fitzgerald River,WA,National Park,National park,II,285675.49,2856.75,119.55597234,-33.94465248

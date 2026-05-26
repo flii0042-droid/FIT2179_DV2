@@ -1,0 +1,22 @@
+state,epbc_status,community_count,status_order
+ACT,Critically Endangered,2,0
+ACT,Endangered,1,1
+NSW,Critically Endangered,30,0
+NSW,Endangered,29,1
+NSW,Vulnerable,1,2
+NT,Endangered,2,1
+QLD,Critically Endangered,7,0
+QLD,Endangered,14,1
+QLD,Vulnerable,1,2
+SA,Critically Endangered,9,0
+SA,Endangered,8,1
+SA,Vulnerable,1,2
+TAS,Critically Endangered,3,0
+TAS,Endangered,3,1
+TAS,Vulnerable,2,2
+VIC,Critically Endangered,13,0
+VIC,Endangered,11,1
+VIC,Vulnerable,1,2
+WA,Critically Endangered,5,0
+WA,Endangered,21,1
+WA,Vulnerable,1,2

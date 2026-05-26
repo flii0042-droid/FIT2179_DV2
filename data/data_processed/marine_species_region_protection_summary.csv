@@ -1,0 +1,61 @@
+environment,region,record_count,protected_record_count,indigenous_protected_record_count,species_count,unprotected_record_count,protected_pct,indigenous_protected_pct
+marine,Tiwi,4419,0,0,1237,4419,0.0,0.0
+marine,West Cape York,48634,1015,0,3116,47619,2.1,0.0
+marine,Central Bass Strait,9514,371,0,1588,9143,3.9,0.0
+marine,WA South Coast,43836,1922,0,4734,41914,4.4,0.0
+marine,Carpentaria,49689,2582,810,1534,47107,5.2,1.6
+marine,Arnhem Wessel,15723,810,262,2401,14913,5.2,1.7
+marine,Northwest Shelf,58179,3350,0,3024,54829,5.8,0.0
+marine,Hawkesbury Shelf,409566,33434,0,9050,376132,8.2,0.0
+marine,Pilbarra (nearshore),58149,5479,0,4327,52670,9.4,0.0
+marine,Bonaparte Gulf,6642,947,2,1765,5695,14.3,0.0
+marine,Twofold Shelf,160366,23037,0,6258,137329,14.4,0.0
+marine,King Sound,2617,414,414,444,2203,15.8,15.8
+marine,Cambridge-Bonaparte,1823,289,0,512,1534,15.9,0.0
+marine,Otway,154355,27529,0,4526,126826,17.8,0.0
+marine,Torres Strait,20743,3945,30,2850,16798,19.0,0.1
+marine,Freycinet,99431,18986,0,3724,80445,19.1,0.0
+marine,Van Diemens Gulf,7426,1479,0,1343,5947,19.9,0.0
+marine,Anson Beagle,97659,19789,155,4893,77870,20.3,0.2
+marine,Arafura,16009,3284,0,1703,12725,20.5,0.0
+marine,Bruny,241990,49742,2,4762,192248,20.6,0.0
+marine,Franklin,12261,2602,2,2158,9659,21.2,0.0
+marine,Boags,56261,12733,0,3516,43528,22.6,0.0
+marine,Central Victoria,148618,34447,0,3574,114171,23.2,0.0
+marine,Wet Tropic Coast,240223,57949,6904,6612,182274,24.1,2.9
+marine,Victorian Embayments,507115,130974,0,5862,376141,25.8,0.0
+marine,Pellew,17958,4655,3695,1376,13303,25.9,20.6
+marine,Oceanic Shoals,15092,4144,0,1664,10948,27.5,0.0
+marine,Wellesley,17904,5584,3184,1481,12320,31.2,17.8
+marine,Davey,17943,5664,0,1752,12279,31.6,0.0
+marine,Flinders,79162,26568,36,3830,52594,33.6,0.0
+marine,Eucla,36696,13548,96,1770,23148,36.9,0.3
+marine,Pilbarra (offshore),74328,27803,0,3785,46525,37.4,0.0
+marine,Karumba-Nassau,19592,8171,2807,1662,11421,41.7,14.3
+marine,Central West Coast,38190,15946,0,3859,22244,41.8,0.0
+marine,Canning,123703,56288,46834,2187,67415,45.5,37.9
+marine,Shark Bay,12026,5797,0,1823,6229,48.2,0.0
+marine,Cobourg,16860,8334,0,3018,8526,49.4,0.0
+marine,Groote,50234,26599,26599,2921,23635,53.0,53.0
+marine,Leeuwin-Naturaliste,110857,59396,0,5436,51461,53.6,0.0
+marine,Spencer Gulf,17747,10049,77,1905,7698,56.6,0.4
+marine,Zuytdorp,11930,6959,0,1557,4971,58.3,0.0
+marine,Batemans Shelf,208781,133333,0,6029,75448,63.9,0.0
+marine,St Vincent Gulf,114504,73336,0,4495,41168,64.0,0.0
+marine,Tweed-Moreton,462714,296934,0,11655,165780,64.2,0.0
+marine,Manning Shelf,142602,96391,0,5037,46211,67.6,0.0
+marine,Eyre,72354,49919,0,4319,22435,69.0,0.0
+marine,North Spencer Gulf,8316,5979,0,1038,2337,71.9,0.0
+marine,Kimberley,22688,17743,2471,3953,4945,78.2,10.9
+marine,Murat,14399,11273,0,1737,3126,78.3,0.0
+marine,Coorong,35975,32132,0,2421,3843,89.3,0.0
+marine,East Cape York,38294,35611,0,3974,2683,93.0,0.0
+marine,Shoalwater Coast,81157,76203,0,4797,4954,93.9,0.0
+marine,Ribbons,178018,172383,443,7453,5635,96.8,0.2
+marine,Eighty Mile Beach,2885,2793,172,442,92,96.8,6.0
+marine,Abrolhos Islands,9874,9576,0,1621,298,97.0,0.0
+marine,Lucinda-Mackay Coast,349290,340179,5051,6314,9111,97.4,1.4
+marine,Pompey-Swains,84408,82928,0,3506,1480,98.2,0.0
+marine,Mackay-Capricorn,272172,267934,0,7424,4238,98.4,0.0
+marine,Ningaloo,305268,302601,0,3439,2667,99.1,0.0
+marine,Central Reef,182952,182775,345,4993,177,99.9,0.2
