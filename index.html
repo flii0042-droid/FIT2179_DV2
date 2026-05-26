@@ -19,51 +19,53 @@
 <body>
   <main class="page">
     <section class="hero">
-      <p class="eyebrow">FIT2179 Data Visualisation 2</p>
-      <h1>Australia's Animal Protection Areas Distribution</h1>
+  <p class="eyebrow">FIT2179 Data Visualisation 2</p>
+  <h1>Australia's Animal Protection Areas Distribution</h1>
 
-      <h2 class="intro-title">Introduction</h2>
+  <h2 class="intro-title">Introduction</h2>
 
-      <p class="intro">
-        Australia has one of the world's largest protected-area networks, covering national parks,
-        nature reserves, Indigenous Protected Areas, conservation reserves and marine protected areas.
-        These areas are central to biodiversity conservation because they help protect habitats,
-        ecological communities and species records from land-use pressure.
-      </p>
+  <p class="intro">
+    Australia has a large and diverse protected-area network, including national parks,
+    nature reserves, Indigenous Protected Areas, conservation reserves and marine protected
+    areas. These places are important because they protect habitats, support biodiversity
+    conservation and form the spatial foundation of Australia's animal protection system.
+  </p>
 
-      <p class="intro intro-secondary">
-        However, protection is not evenly distributed. Some regions contain many small protected
-        areas clustered near cities and coastlines, while remote inland regions contain fewer but
-        much larger reserves. This means that the same national total can hide very different
-        local patterns of protection.
-      </p>
+  <p class="intro">
+    However, the existence of many protected areas does not automatically mean that animal
+    conservation needs are evenly covered. Some regions contain many small protected areas
+    near cities and coastlines, while remote inland regions contain fewer but much larger
+    reserves. This means that a national total can hide very different local patterns of
+    protection.
+  </p>
 
-      <p class="intro intro-secondary">
-        This visualisation investigates how Australia's protected areas are distributed across
-        space, state, protected-area type and management category. It then connects these patterns
-        with species records and threatened ecological communities to ask a broader question:
-        where does protection appear strong, and where might conservation gaps remain?
-      </p>
-    </section>
+  <p class="intro">
+    This visualisation follows a three-part story. First, it examines where protected areas
+    are located and how their size varies across Australia. Second, it compares the types and
+    management roles of protected areas. Finally, it connects these patterns with threatened
+    animal data to ask the central question: are protected areas located where animal
+    protection needs are greatest?
+  </p>
+</section>
 
     <section class="chapter method-note">
       <p class="chapter-kicker">How to Read</p>
-      <h2>From National Pattern to Conservation Gaps</h2>
+      <h2>From Protected Areas to Animal Protection Need</h2>
       <p>
         The visualisation is organised as a guided story. It begins with the national spatial pattern
         of protected areas, then compares protected-area categories and growth over time, and finally
-        connects these patterns with species records and threatened ecological communities. Larger symbols
-        show area, darker map cells show density, and each insight box highlights the main takeaway.
-      </p>
+        connects these patterns with threatened animal data. Larger map symbols show protected-area size,
+        darker map colours show higher coverage or density, and the final charts ask whether protected
+        land appears to align with animal conservation need.
       <p class="chapter-summary">
         Domain: Australian biodiversity conservation. Audience: a general public and university audience
-        interested in environmental policy, protected areas and species protection.
+        interested in environmental policy, protected areas and threatened animal protection.
       </p>
       <div class="terms-box">
-      <p><strong>EPBC status</strong> describes the conservation threat category of species or ecological communities under Australian environmental law.</p>
-      <p><strong>IUCN category</strong> describes the management purpose of a protected area, such as national park, habitat management or sustainable use.</p>
-      <p><strong>Gazettal year</strong> means the year a protected area was officially recorded or declared.</p>
-    </div>
+        <p><strong>EPBC status</strong> describes the conservation threat category of species or ecological communities under Australian environmental law.</p>
+        <p><strong>IUCN category</strong> describes the management purpose of a protected area, such as national park, habitat management or sustainable use.</p>
+        <p><strong>Gazettal year</strong> means the year a protected area was officially recorded or declared.</p>
+      </div>
     </section>
 
     <section class="chapter">
@@ -77,46 +79,53 @@
     </section>
 
     <section class="section">
-      <h2>1. Major Protected Areas Across Australia</h2>
-      <p>
-        This proportional symbol map focuses on five major protected-area categories and only includes sites
-        of 50,000 hectares or larger. Filtering the data reduces visual clutter from thousands of smaller sites
-        while keeping the protected areas that contribute most to national land protection. Circle size represents
-        area, so larger symbols indicate larger protected areas.
-      </p>
+      <div class="section-copy">
+        <h2 class="section-title">1. Major Protected Areas Across Australia</h2>
+        <p>
+          This proportional symbol map focuses on five major protected-area categories and only includes sites
+          of 50,000 hectares or larger. Filtering the data reduces visual clutter from thousands of smaller sites
+          while keeping the protected areas that contribute most to national land protection. Circle size represents
+          area, so larger symbols indicate larger protected areas.
+        </p>
+      </div>
       <div id="map" class="vis-container"></div>
       <p class="insight">
-        Key insight: large protected areas are concentrated in inland and northern Australia. Coastal regions
-        still contain many protected areas, but many are smaller and overlap heavily when every record is shown.
-        This map is therefore a simplified national overview, not a complete inventory of every protected area.
+        Inland Australia contributes much of the protected-area total through a smaller
+        number of very large reserves, while coastal Australia has many smaller protected areas. This
+        means the national protected-area network is shaped by two different patterns: large remote
+        reserves in the interior and smaller, denser protected sites near the coast.
       </p>
     </section>
 
     <section class="section">
-      <h2>2. Protected Land Is Concentrated in a Few States</h2>
-      <p>
-        This bar chart compares total protected-area hectares by state and territory. It focuses on absolute
-        protected area, showing which states contribute the largest amount of land to the national protected-area
-        network.
-      </p>
+      <div class="section-copy">
+        <h2 class="section-title">2. Protected Land Is Concentrated in a Few States</h2>
+        <p>
+          This bar chart compares total protected-area hectares by state and territory. It focuses on absolute
+          protected area, showing which states contribute the largest amount of land to the national protected-area
+          network.
+        </p>
+      </div>
       <div id="stateBar" class="vis-container"></div>
       <p class="insight">
-        Key insight: Western Australia, the Northern Territory and South Australia dominate the national total.
+        Western Australia, the Northern Territory and South Australia dominate the national total.
         This reflects both their large land areas and the presence of very large inland protected areas. However,
         absolute area alone does not show how much of each state is protected.
       </p>
     </section>
 
     <section class="section">
-      <h2>3. State Coverage Is More Meaningful After Normalisation</h2>
-      <p>
-        Instead of only comparing raw protected-area hectares, this choropleth map compares protected area as
-        a percentage of each state's land area. This normalised view creates a fairer comparison between large
-        and small states.
-      </p>
+      <div class="section-copy">
+        <h2 class="section-title">3. State Coverage Is More Meaningful After Normalisation</h2>
+        <p>
+          Instead of only comparing raw protected-area hectares, this choropleth map compares protected area as
+          a percentage of each state's land area. This normalised view creates a fairer comparison between large
+          and small states.
+        </p>
+      </div>
       <div id="indigenousMap" class="vis-container"></div>
       <p class="insight">
-        Key insight: normalising by state land area changes the interpretation. A large state does not automatically
+        Normalising by state land area changes the interpretation. A large state does not automatically
         appear important just because it has more land. The map instead highlights where protection covers a larger
         share of the state.
       </p>
@@ -134,174 +143,213 @@
     </section>
 
     <section class="section">
-      <h2>4. Protected-Area Types Contribute Unequally</h2>
-      <p>
-        This labelled bar chart compares how much protected land each protected-area type contributes to the
-        national network. A bar chart is used instead of a donut chart because it makes category comparison
-        clearer and allows the exact percentage values to be labelled.
-      </p>
+      <div class="section-copy">
+        <h2 class="section-title">4. Protected-Area Types Contribute Unequally</h2>
+        <p>
+          This labelled bar chart compares how much protected land each protected-area type contributes to the
+          national network. A bar chart is used instead of a donut chart because it makes category comparison
+          clearer and allows the exact percentage values to be labelled.
+        </p>
+      </div>
       <div id="typeBar" class="vis-container"></div>
       <p class="insight">
-        Key insight: Indigenous Protected Areas contribute the largest share of protected land by area. This shows
+        Indigenous Protected Areas contribute the largest share of protected land by area. This shows
         that Australia's protected-area network is shaped not only by national parks, but also by Indigenous land
         management and other reserve categories.
       </p>
     </section>
 
     <section class="section">
-      <h2>5. The Largest Protected Areas Are Mostly Inland</h2>
-      <p>
-        This ranking shows the largest individual protected areas. It identifies the specific places that contribute
-        most strongly to Australia's total protected-area hectares.
-      </p>
-      <div id="largestMap" class="vis-container"></div>
+      <div class="section-copy">
+        <h2 class="section-title">5. The Largest Protected Areas Are Mostly Inland</h2>
+        <p>
+          This ranking shows the largest individual protected areas. It identifies the specific places that contribute
+          most strongly to Australia's total protected-area hectares.
+        </p>
+      </div>
+      <div id="largestRankChart" class="vis-container"></div>
       <p class="insight">
-        Key insight: the largest protected areas are mostly inland and remote. This explains why the national
+        The largest protected areas are mostly inland and remote. This explains why the national
         protected-area total can be strongly influenced by a relatively small number of very large sites.
       </p>
     </section>
 
     <section class="section">
-      <h2>6. Protection Has Expanded Over Time</h2>
-      <p>
-        The cumulative area chart shows when protected areas entered the network based on available gazettal years.
-        The small chart below acts as an interactive time selector: drag across it to zoom into a specific period.
-      </p>
+      <div class="section-copy">
+        <h2 class="section-title">6. Protection Has Expanded Over Time</h2>
+        <p>
+          The cumulative area chart shows when protected areas entered the network based on available gazettal years.
+          The small chart below acts as an interactive time selector: drag across it to zoom into a specific period.
+        </p>
+      </div>
       <div id="timelineChart" class="vis-container"></div>
       <p class="insight">
-        Key insight: protected-area growth does not increase evenly. The steep rises suggest periods when major
+        Protected-area growth does not increase evenly. The steep rises suggest periods when major
         new protected areas were added, rather than slow and constant growth over time. Use the lower mini chart
         to focus on specific decades and inspect when the largest jumps occurred.
       </p>
     </section>
 
-    <section class="chapter">
-      <p class="chapter-kicker">Chapter 3</p>
-      <h2>Where Do Protection Gaps Remain?</h2>
-      <p>
-        The final part connects protected-area distribution with conservation need. A large protected-area network
-        does not mean that all species records or threatened ecological communities are equally covered. These charts
-        compare protection coverage across species status, management categories and local protected-area density.
-      </p>
-    </section>
-
-    <section class="section">
-  <h2>7. Species Protection Coverage Differs by Status</h2>
+  <section class="chapter">
+  <p class="chapter-kicker">Chapter 3</p>
+  <h2>Are Protected Areas Protecting Animals?</h2>
   <p>
-    This slope chart compares the percentage of terrestrial and marine species records
-    located inside protected areas. Each line represents one EPBC status category. The slope
-    makes it easier to see whether marine or terrestrial records have higher protection
-    coverage within the same threat category.
-  </p>
-  <div id="speciesSlope" class="vis-container"></div>
-  <p class="insight">
-    Key insight: protection coverage differs across both threat status and environment. Lines
-    with steeper slopes show larger differences between terrestrial and marine species records,
-    suggesting that protected-area coverage is not evenly distributed across environments.
+    The final part shifts from protected-area distribution to animal conservation need.
+    A state can have a large protected-area network, but that does not automatically mean
+    it has fewer threatened animals or that protection is located where animal pressure is highest.
+    These charts compare threatened animal species, animal groups and EPBC threat status across states.
   </p>
 </section>
 
-  <section class="section">
+<section class="section">
   <div class="section-copy">
-    <h2 class="section-title">8. IUCN Categories Have Different Management Roles</h2>
+    <h2 class="section-title">7. Animal Protection Need Does Not Match Land Coverage</h2>
     <p>
-      This bubble chart compares IUCN management categories using three measures at once.
-      The horizontal axis shows the number of protected areas, the vertical axis shows total
-      protected-area hectares, and bubble size represents the average area of one protected area
-      in that category. This helps reveal whether a category contains many small sites or fewer
-      very large sites.
+      This quadrant scatter plot compares protected-area coverage with animal conservation need.
+      Each point represents one state or territory. The dashed vertical line shows the median
+      protected-area coverage, while the dashed horizontal line shows the median number of
+      threatened animal species. This divides states into four groups and helps identify places
+      where animal need is high but protected land coverage is relatively low.
+    </p>
+
+    <p class="insight">
+      Key insight: New South Wales and Queensland sit in the high-need and lower-coverage area.
+      They have many threatened animal species, but their protected-area coverage is not as high
+      as some smaller states. This suggests that protected-area extent alone does not fully explain
+      animal protection need.
     </p>
   </div>
-  <div id="iucnBubble" class="vis-container"></div>
-  <p class="insight">
-    Key insight: IUCN categories play different roles in the protected-area network. Category VI
-    covers the largest total area, while categories such as Ia contain many more individual sites
-    but smaller average area. This shows that management categories should not be compared by
-    count alone; total area and average site size change the interpretation.
-  </p>
+
+  <div id="animalGap" class="vis-container"></div>
 </section>
 
-    <section class="section">
-  <h2>9. Threatened Ecological Communities Vary by State</h2>
-  <p>
-    This heatmap compares listed threatened ecological communities by state and EPBC status.
-    Each cell represents one state-status combination, and darker colour indicates a higher
-    number of listed ecological communities.
-  </p>
-  <div id="communityHeatmap" class="vis-container"></div>
-  <p class="insight">
-    Key insight: threatened ecological communities are not evenly distributed across states.
-    New South Wales stands out with high counts in severe categories, while other states show
-    lower or more concentrated patterns. The heatmap makes the state-by-status structure easier
-    to compare than stacked bars.
-  </p>
+<section class="section">
+  <div class="section-copy">
+    <h2 class="section-title">8. Animal Groups Face Different Levels of Threat</h2>
+    <p>
+      This bubble chart compares listed animal groups using three measures at once. The horizontal
+      axis shows the total number of listed animal species in each group, the vertical axis shows
+      the number of critically endangered and endangered species, and bubble size represents the
+      number of vulnerable species. This makes it possible to compare both the scale and severity
+      of animal threat.
+    </p>
+
+    <p class="insight">
+      Key insight: birds and mammals contain many listed species, but reptiles and fish also show
+      substantial high-risk listings. This means animal protection cannot be treated as one single
+      problem. Different animal groups depend on different habitats, so protected areas may support
+      some groups more effectively than others.
+    </p>
+  </div>
+
+  <div id="animalGroupBubble" class="vis-container"></div>
 </section>
 
-    <section class="section">
-      <h2>10. Protected Area Density Forms Local Clusters</h2>
-      <p>
-        This bin map groups protected-area locations into geographic grid cells. Darker cells contain more protected
-        areas, but this measures site density rather than total protected hectares. It is useful for showing where
-        many protected-area sites cluster together.
-      </p>
-      <div id="densityMap" class="vis-container"></div>
-      <p class="insight">
-        Key insight: south-eastern Australia and south-western Western Australia appear darker because they contain
-        many small protected areas close together. Inland Australia often has fewer protected areas, but some are
-        extremely large. This explains why Chart 1 and Chart 10 appear different: Chart 1 highlights protected-area
-        size, while Chart 10 highlights local clustering and site density.
-      </p>
-    </section>
+<section class="section">
+  <div class="section-copy">
+    <h2 class="section-title">9. Threatened Animal Groups Are Uneven Across States</h2>
+    <p>
+      This heatmap compares threatened animal groups across states and territories. Each cell
+      represents one animal group in one state, and darker colour indicates a higher number of
+      listed threatened animal species. The chart helps show whether animal conservation pressure
+      is concentrated in particular states or spread across multiple animal groups.
+    </p>
 
+    <p class="insight">
+      Key insight: animal threat patterns are geographically uneven. New South Wales and Queensland
+      stand out across several animal groups, while some smaller states show more concentrated
+      patterns. This helps show that conservation gaps are not only about how much land is protected,
+      but also about which animal groups are under pressure in each state.
+    </p>
+  </div>
+
+  <div id="animalGroupHeatmap" class="vis-container"></div>
+</section>
+
+<section class="section">
+  <div class="section-copy">
+    <h2 class="section-title">10. Threat Severity Also Differs by State</h2>
+    <p>
+      This stacked percentage chart compares the EPBC threat-status composition of listed animals
+      in each state and territory. Instead of only counting how many threatened animals each state
+      has, it shows whether the listed animals are mainly vulnerable, endangered or critically
+      endangered. This helps separate the amount of animal pressure from the severity of that
+      pressure.
+    </p>
+
+    <p class="insight">
+      Key insight: states differ not only in the number of threatened animals, but also in the
+      seriousness of those listings. A state with fewer listed animals may still have a high share
+      of endangered or critically endangered species. This reinforces the main argument: protection
+      should be evaluated against animal conservation need, not only against protected-area size.
+    </p>
+  </div>
+
+  <div id="animalStatusStack" class="vis-container"></div>
+</section>
     <section class="chapter conclusion">
-      <p class="chapter-kicker">Conclusion</p>
-      <h2>Australia Protects a Large Area, but Protection Is Uneven</h2>
-      <p>
-        Overall, Australia's protected-area network is extensive, but its distribution is uneven. Large inland
-        reserves dominate total protected area, while coastal regions contain many smaller protected areas clustered
-        close together. This means that area, density and location need to be interpreted together.
-      </p>
-      <p>
-        The visualisations also show that protected-area type matters. Indigenous Protected Areas contribute a major
-        share of total protected land, while other categories contain many smaller sites or serve different management
-        roles. At the same time, species protection coverage and threatened ecological communities vary across
-        environments and states.
-      </p>
-      <p>
-        The key issue is therefore not only how much land is protected, but where protection is located, what type of
-        protection it represents, and whether it aligns with conservation need. A strong protected-area network should
-        be evaluated through both spatial distribution and ecological relevance.
-      </p>
-    </section>
+  <p class="chapter-kicker">Conclusion</p>
+  <h2>Protected Area Size Alone Does Not Explain Animal Protection</h2>
+
+  <p>
+    Overall, Australia's protected-area network is extensive, but its distribution is uneven.
+    Large inland reserves dominate the total protected area, while coastal and south-eastern
+    regions contain many smaller protected areas. This means that protected-area size,
+    protected-area density and geographic location must be interpreted together rather than
+    treated as one simple national total.
+  </p>
+
+  <p>
+    The visualisations also show that protected-area type matters. Indigenous Protected Areas
+    and national parks contribute strongly to total protected land, while other categories play
+    different management roles or contain many smaller sites. The network is therefore not just
+    a map of land coverage; it is also a system of different protection purposes, histories and
+    management categories.
+  </p>
+
+  <p>
+    When the protected-area pattern is compared with threatened animal data, the key message
+    becomes clearer: more protected land does not always mean lower animal conservation pressure.
+    Some states have many threatened animal species despite relatively lower protected-area
+    coverage, while other states have higher coverage but fewer threatened animal species. This
+    suggests that conservation planning should consider both the amount of protected land and
+    whether that land aligns with animal habitats and threat patterns.
+  </p>
+
+  <p>
+    The main conclusion is that Australia's protected-area network is large, but animal
+    protection is still uneven. A stronger conservation strategy should not only ask
+    “how much land is protected?”, but also “where is protection located, what type of protection
+    is it, and does it match the animals most in need?”
+  </p>
+</section>
 
     <section class="footer-meta">
-  <div class="footer-column">
-    <h2>Data sources</h2>
-    <p>
-      Collaborative Australian Protected Areas Database (CAPAD) 2024, Department of Climate
-      Change, Energy, the Environment and Water. Species protection summaries and conservation
-      records were prepared from CSIRO Data Access Portal datasets. Map boundaries use publicly
-      available Australia and Australian state GeoJSON / TopoJSON boundary files.
-    </p>
-  </div>
+      <div class="footer-column">
+        <h2>Data sources</h2>
+        <p>
+          Collaborative Australian Protected Areas Database (CAPAD) 2024, Department of Climate
+          Change, Energy, the Environment and Water. Species protection summaries and conservation
+          records were prepared from CSIRO Data Access Portal datasets. Map boundaries use publicly
+          available Australia and Australian state GeoJSON / TopoJSON boundary files.
+        </p>
+      </div>
 
-  <div class="footer-column">
-    <h2>Authorship</h2>
-    <p>
-      Created by Fan Li for FIT2179 Data Visualisation 2, Semester 1, 2026. All visualisations
-      were created with Vega-Lite.
-    </p>
-  </div>
+      <div class="footer-column">
+        <h2>Authorship</h2>
+        <p>
+          Created by Fan Li for FIT2179 Data Visualisation 2, Semester 1, 2026. All visualisations
+          were created with Vega-Lite.
+        </p>
+      </div>
 
-  <div class="footer-column">
-    <h2>AI acknowledgement</h2>
-    <p>
-      Generative AI tools were used to assist with data preparation, planning, code structure,
-      debugging and wording refinement. Final design decisions, data interpretation and
-      implementation were reviewed and edited by the author.
-    </p>
-  </div>
-</section>
+      <div class="footer-column">
+        <h2>AI acknowledgement</h2>
+        <p>
+          Generative AI tools were used to assist with data preparation.
+        </p>
+      </div>
+    </section>
   </main>
 
   <script src="js/main.js"></script>
