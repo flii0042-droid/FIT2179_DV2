@@ -61,14 +61,7 @@ const typePalette = {
 };
 
 function chartTitle(text, subtitle) {
-  return {
-    "text": text,
-    "subtitle": subtitle,
-    "fontSize": 18,
-    "subtitleFontSize": 12,
-    "anchor": "start",
-    "offset": 10
-  };
+  return undefined;
 }
 
 function embed(id, spec) {
@@ -338,7 +331,7 @@ const typeBarSpec = {
 embed("#typeBar", typeBarSpec);
 
 /* 5. Lollipop Ranking */
-const largestMapSpec = {
+const largestRankSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 620,
   "height": 430,
@@ -414,7 +407,7 @@ const largestMapSpec = {
   ],
   "config": baseConfig
 };
-embed("#largestMap", largestMapSpec);
+embed("#largestRankChart", largestRankSpec);
 
 /* 6. Interactive Timeline */
 const timelineChartSpec = {
@@ -467,9 +460,17 @@ const timelineChartSpec = {
       ]
     },
     {
-      "width": CHART_WIDTH,
-      "height": 70,
-      "params": [
+  "width": CHART_WIDTH,
+  "height": 70,
+  "title": {
+    "text": "Drag here to select a time period",
+    "fontSize": 12,
+    "fontWeight": "normal",
+    "color": "#506157",
+    "anchor": "start",
+    "offset": 4
+  },
+  "params": [
         {
           "name": "brush",
           "select": { "type": "interval", "encodings": ["x"] }
@@ -496,122 +497,150 @@ const timelineChartSpec = {
 };
 embed("#timelineChart", timelineChartSpec);
 
-/* 7. Dumbbell Chart */
-const speciesSlopeSpec = {
+/* 7. Quadrant Scatter Plot */
+const animalGapSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 620,
-  "height": 330,
+  "width": CHART_WIDTH,
+  "height": 360,
+  "data": { "url": DATA_PATH + "animal_state_coverage.csv" },
   "title": chartTitle(
-    "Species Records Protected by EPBC Status",
-    "Slope chart: each line connects terrestrial and marine protection coverage."
+    "Animal Need Compared with Protected-Area Coverage",
+    "Quadrant scatter plot: each point is one state or territory. Dashed lines show median values."
   ),
-  "data": { "url": DATA_PATH + "species_status_summary_combined.csv" },
   "transform": [
-    { "filter": "datum.epbc_status != 'Extinct in the wild'" },
-    { "filter": "datum.epbc_status != 'Extinct'" },
     {
-      "calculate": "datum.environment == 'terrestrial' ? 'Terrestrial' : 'Marine'",
-      "as": "environment_label"
+      "calculate": "datum.protected_area_pct_of_state_land < 27.6 && datum.threatened_animal_species > 167 ? 'High animal need / lower land coverage' : datum.protected_area_pct_of_state_land >= 27.6 && datum.threatened_animal_species > 167 ? 'High animal need / higher land coverage' : datum.protected_area_pct_of_state_land < 27.6 && datum.threatened_animal_species <= 167 ? 'Lower animal need / lower land coverage' : 'Lower animal need / higher land coverage'",
+      "as": "quadrant"
     }
   ],
   "layer": [
     {
+      "data": { "values": [{}] },
       "mark": {
-        "type": "line",
-        "point": {
-          "filled": true,
-          "size": 90
-        },
-        "strokeWidth": 3
+        "type": "rule",
+        "stroke": "#9a9488",
+        "strokeDash": [6, 5],
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "x": { "datum": 27.6 }
+      }
+    },
+    {
+      "data": { "values": [{}] },
+      "mark": {
+        "type": "rule",
+        "stroke": "#9a9488",
+        "strokeDash": [6, 5],
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "y": { "datum": 167 }
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 260,
+        "opacity": 0.9,
+        "stroke": "#ffffff",
+        "strokeWidth": 1.5
       },
       "encoding": {
         "x": {
-          "field": "environment_label",
-          "type": "nominal",
-          "title": null,
-          "sort": ["Terrestrial", "Marine"],
-          "axis": { "labelAngle": 0, "labelFontSize": 13 }
+          "field": "protected_area_pct_of_state_land",
+          "type": "quantitative",
+          "title": "Protected area coverage (% of state land)",
+          "scale": { "domain": [0, 60] }
         },
         "y": {
-          "field": "protected_pct",
+          "field": "threatened_animal_species",
           "type": "quantitative",
-          "title": "Protected species records (%)",
-          "scale": { "domain": [0, 80] }
+          "title": "Threatened animal species",
+          "scale": { "domain": [0, 280] }
         },
         "color": {
-          "field": "epbc_status",
+          "field": "quadrant",
           "type": "nominal",
-          "title": "EPBC status",
+          "title": "Quadrant",
           "scale": {
-            "range": ["#006d77", "#2a9d8f", "#f2c94c", "#e76f51", "#8d8378"]
+            "domain": [
+              "High animal need / lower land coverage",
+              "High animal need / higher land coverage",
+              "Lower animal need / lower land coverage",
+              "Lower animal need / higher land coverage"
+            ],
+            "range": ["#c75d45", "#d6a13f", "#7f9fbd", "#3f8a63"]
           },
-          "legend": { "orient": "bottom", "columns": 2 }
+          "legend": {
+            "orient": "bottom",
+            "columns": 2
+          }
         },
-        "detail": { "field": "epbc_status", "type": "nominal" },
         "tooltip": [
-          { "field": "epbc_status", "type": "nominal", "title": "EPBC status" },
-          { "field": "environment_label", "type": "nominal", "title": "Environment" },
-          { "field": "record_count", "type": "quantitative", "title": "Species records", "format": "," },
-          { "field": "protected_pct", "type": "quantitative", "title": "Protected (%)", "format": ".1f" }
+          { "field": "state", "type": "nominal", "title": "State" },
+          { "field": "threatened_animal_species", "type": "quantitative", "title": "Threatened animal species" },
+          { "field": "protected_area_pct_of_state_land", "type": "quantitative", "title": "Protected area coverage (%)", "format": ".1f" },
+          { "field": "quadrant", "type": "nominal", "title": "Quadrant" }
         ]
       }
     },
     {
-      "transform": [
-        { "filter": "datum.environment == 'marine'" }
-      ],
       "mark": {
         "type": "text",
         "align": "left",
+        "baseline": "middle",
         "dx": 10,
-        "fontSize": 11,
-        "fontWeight": "600"
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "fill": "#173326"
       },
       "encoding": {
         "x": {
-          "field": "environment_label",
-          "type": "nominal",
-          "sort": ["Terrestrial", "Marine"]
+          "field": "protected_area_pct_of_state_land",
+          "type": "quantitative"
         },
         "y": {
-          "field": "protected_pct",
+          "field": "threatened_animal_species",
           "type": "quantitative"
         },
         "text": {
-          "field": "epbc_status",
+          "field": "state",
           "type": "nominal"
-        },
-        "color": {
-          "field": "epbc_status",
-          "type": "nominal",
-          "scale": {
-            "range": ["#006d77", "#2a9d8f", "#f2c94c", "#e76f51", "#8d8378"]
-          },
-          "legend": null
         }
       }
     }
   ],
   "config": baseConfig
 };
-
-embed("#speciesSlope", speciesSlopeSpec);
-
-/* 8. IUCN Bubble Matrix */
-/* 8. IUCN Bubble Chart */
-const iucnBubbleSpec = {
+embed("#animalGap", animalGapSpec);
+/* 8. Animal group bubble chart */
+const animalGroupBubbleSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": CHART_WIDTH,
   "height": 380,
   "title": chartTitle(
-    "IUCN Category: Count, Total Area and Average Size",
-    "Bubble chart: x = number of areas, y = total area, bubble size = average area."
+    "Threat Profile by Animal Group",
+    "Bubble chart: x = total listed animals, y = critically endangered + endangered animals."
   ),
-  "data": { "url": DATA_PATH + "protected_area_iucn_summary.csv" },
+  "data": { "url": DATA_PATH + "animal_group_status.csv" },
   "transform": [
+    { "calculate": "toNumber(datum.species_count)", "as": "n" },
     {
-      "calculate": "datum.iucn_category == 'Ia' ? 'Ia - Strict nature reserve' : datum.iucn_category == 'Ib' ? 'Ib - Wilderness area' : datum.iucn_category == 'II' ? 'II - National park' : datum.iucn_category == 'III' ? 'III - Natural monument' : datum.iucn_category == 'IV' ? 'IV - Habitat/species management' : datum.iucn_category == 'V' ? 'V - Protected landscape/seascape' : datum.iucn_category == 'VI' ? 'VI - Sustainable use area' : datum.iucn_category == 'NAS' ? 'Not assigned' : datum.iucn_category == 'NR' ? 'Not reported' : datum.iucn_category",
-      "as": "iucn_label"
+      "calculate": "datum.status == 'Critically Endangered' || datum.status == 'Endangered' ? datum.n : 0",
+      "as": "high_risk_species"
+    },
+    {
+      "calculate": "datum.status == 'Vulnerable' ? datum.n : 0",
+      "as": "vulnerable_species"
+    },
+    {
+      "aggregate": [
+        { "op": "sum", "field": "n", "as": "total_species" },
+        { "op": "sum", "field": "high_risk_species", "as": "high_risk_total" },
+        { "op": "sum", "field": "vulnerable_species", "as": "vulnerable_total" }
+      ],
+      "groupby": ["group"]
     }
   ],
   "layer": [
@@ -620,77 +649,165 @@ const iucnBubbleSpec = {
         "type": "circle",
         "filled": true,
         "opacity": 0.78,
-        "color": "#2f7d4f",
         "stroke": "#ffffff",
-        "strokeWidth": 1.5
+        "strokeWidth": 1.4
       },
       "encoding": {
         "x": {
-          "field": "protected_area_count",
+          "field": "total_species",
           "type": "quantitative",
-          "title": "Number of protected areas",
-          "axis": { "format": "," }
+          "title": "Total listed animal species",
+          "scale": { "domain": [0, 210] }
         },
         "y": {
-          "field": "total_area_ha",
+          "field": "high_risk_total",
           "type": "quantitative",
-          "title": "Total protected area (hectares)",
-          "axis": { "format": "~s" }
+          "title": "Critically endangered + endangered species",
+          "scale": { "domain": [0, 100] }
         },
         "size": {
-          "field": "mean_area_ha",
+          "field": "vulnerable_total",
           "type": "quantitative",
-          "title": "Average area per protected area (ha)",
-          "scale": { "type": "sqrt", "range": [120, 2200] },
-          "legend": {
-            "orient": "bottom",
-            "format": "~s"
-          }
+          "title": "Vulnerable species",
+          "scale": { "type": "sqrt", "range": [180, 2400] },
+          "legend": { "orient": "bottom" }
+        },
+        "color": {
+          "field": "group",
+          "type": "nominal",
+          "title": "Animal group",
+          "scale": {
+            "domain": ["Birds", "Mammals", "Reptiles", "Amphibians", "Fish", "Sharks & Rays"],
+            "range": ["#2a9d8f", "#006d77", "#bb6b3d", "#9b51e0", "#7d98bd", "#d4ad4d"]
+          },
+          "legend": { "orient": "bottom", "columns": 3 }
         },
         "tooltip": [
-          { "field": "iucn_label", "type": "nominal", "title": "IUCN category" },
-          { "field": "protected_area_count", "type": "quantitative", "title": "Number of protected areas", "format": "," },
-          { "field": "total_area_ha", "type": "quantitative", "title": "Total area (ha)", "format": ",.0f" },
-          { "field": "mean_area_ha", "type": "quantitative", "title": "Average area (ha)", "format": ",.0f" },
-          { "field": "share_of_national_protected_area_pct", "type": "quantitative", "title": "Share of national area (%)", "format": ".1f" }
+          { "field": "group", "type": "nominal", "title": "Animal group" },
+          { "field": "total_species", "type": "quantitative", "title": "Total listed species", "format": "," },
+          { "field": "high_risk_total", "type": "quantitative", "title": "Critically endangered + endangered", "format": "," },
+          { "field": "vulnerable_total", "type": "quantitative", "title": "Vulnerable", "format": "," }
         ]
       }
     },
     {
       "mark": {
         "type": "text",
-        "align": "left",
-        "dx": 9,
-        "fontSize": 11,
+        "fontSize": 12,
         "fontWeight": "700",
+        "dx": 10,
         "color": "#173326"
       },
       "encoding": {
-        "x": { "field": "protected_area_count", "type": "quantitative" },
-        "y": { "field": "total_area_ha", "type": "quantitative" },
-        "text": { "field": "iucn_category", "type": "nominal" }
+        "x": { "field": "total_species", "type": "quantitative" },
+        "y": { "field": "high_risk_total", "type": "quantitative" },
+        "text": { "field": "group", "type": "nominal" }
       }
     }
   ],
   "config": baseConfig
 };
+embed("#animalGroupBubble", animalGroupBubbleSpec);
 
-embed("#iucnBubble", iucnBubbleSpec);
-
-/* 9. Stacked Bar Chart */
-const communityHeatmapSpec = {
+/* 9. Animal group by state heatmap */
+const animalGroupHeatmapSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 620,
-  "height": 260,
+  "width": CHART_WIDTH,
+  "height": 300,
   "title": chartTitle(
-    "Threatened Ecological Communities by State",
-    "Heatmap: darker cells show more listed ecological communities."
+    "Threatened Animal Groups by State",
+    "Heatmap: darker cells show more listed threatened animal species."
   ),
-  "data": { "url": DATA_PATH + "threatened_communities_by_state.csv" },
+  "data": { "url": DATA_PATH + "animal_group_state.csv" },
+  "transform": [
+    {
+      "impute": "species_count",
+      "key": "state",
+      "groupby": ["group"],
+      "value": 0,
+      "keyvals": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
+    }
+  ],
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#ffffff",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "state",
+          "type": "nominal",
+          "title": null,
+          "sort": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"],
+          "axis": { "labelAngle": 0 }
+        },
+        "y": {
+          "field": "group",
+          "type": "nominal",
+          "title": null,
+          "sort": ["Mammals", "Birds", "Reptiles", "Amphibians", "Fish", "Sharks & Rays"]
+        },
+        "color": {
+          "field": "species_count",
+          "type": "quantitative",
+          "title": "Threatened animals",
+          "scale": {
+            "domain": [0, 100],
+            "range": ["#fff7ec", "#fdd49e", "#fc8d59", "#d7301f", "#7f0000"]
+          },
+          "legend": { "orient": "bottom" }
+        },
+        "tooltip": [
+          { "field": "state", "type": "nominal", "title": "State" },
+          { "field": "group", "type": "nominal", "title": "Animal group" },
+          { "field": "species_count", "type": "quantitative", "title": "Threatened animal species", "format": "," }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": "700"
+      },
+      "encoding": {
+        "x": {
+          "field": "state",
+          "type": "nominal",
+          "sort": ["ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"]
+        },
+        "y": {
+          "field": "group",
+          "type": "nominal",
+          "sort": ["Mammals", "Birds", "Reptiles", "Amphibians", "Fish", "Sharks & Rays"]
+        },
+        "text": { "field": "species_count", "type": "quantitative", "format": "," },
+        "color": {
+          "condition": { "test": "datum.species_count >= 50", "value": "#ffffff" },
+          "value": "#173326"
+        }
+      }
+    }
+  ],
+  "config": baseConfig
+};
+embed("#animalGroupHeatmap", animalGroupHeatmapSpec);
+
+/* 10. Animal threat status stacked percentage chart */
+const animalStatusStackSpec = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": CHART_WIDTH,
+  "height": 340,
+  "title": chartTitle(
+    "Threat Severity of Listed Animals by State",
+    "Normalised stacked bars compare the share of each EPBC threat status."
+  ),
+  "data": { "url": DATA_PATH + "animal_state_status.csv" },
   "mark": {
-    "type": "rect",
-    "stroke": "#ffffff",
-    "strokeWidth": 2
+    "type": "bar",
+    "cornerRadiusEnd": 2
   },
   "encoding": {
     "x": {
@@ -701,72 +818,33 @@ const communityHeatmapSpec = {
       "axis": { "labelAngle": 0 }
     },
     "y": {
-      "field": "epbc_status",
-      "type": "nominal",
-      "title": null,
-      "sort": ["Critically Endangered", "Endangered", "Vulnerable"]
+      "aggregate": "sum",
+      "field": "threatened_animal_species",
+      "type": "quantitative",
+      "stack": "normalize",
+      "title": "Share of listed threatened animals",
+      "axis": { "format": ".0%" }
     },
     "color": {
-      "field": "community_count",
-      "type": "quantitative",
-      "title": "Communities",
-      "scale": { "scheme": "orangered" },
-      "legend": { "orient": "bottom" }
+      "field": "epbc_status",
+      "type": "nominal",
+      "title": "EPBC status",
+      "scale": {
+        "domain": ["Critically Endangered", "Endangered", "Vulnerable", "Conservation Dependent"],
+        "range": ["#8f1d1d", "#e76f51", "#f4a261", "#7d98bd"]
+      },
+      "legend": { "orient": "bottom", "columns": 2 }
+    },
+    "order": {
+      "field": "status_order",
+      "type": "quantitative"
     },
     "tooltip": [
       { "field": "state", "type": "nominal", "title": "State" },
       { "field": "epbc_status", "type": "nominal", "title": "EPBC status" },
-      { "field": "community_count", "type": "quantitative", "title": "Communities", "format": "," }
+      { "field": "threatened_animal_species", "type": "quantitative", "title": "Threatened animal species", "format": "," }
     ]
   },
   "config": baseConfig
 };
-
-embed("#communityHeatmap", communityHeatmapSpec);
-
-/* 10. Bin Map */
-const densityMapSpec = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 620,
-  "height": 520,
-  "title": chartTitle(
-    "Protected Area Density Grid",
-    "Bin map: darker cells mean more protected areas, not more protected hectares."
-  ),
-  "projection": mapProjection,
-  "layer": [
-    australiaBase,
-    {
-      "data": { "url": DATA_PATH + "protected_areas_points.csv" },
-      "transform": [
-        { "calculate": "floor(datum.longitude * 2) / 2 + 0.25", "as": "lon_bin" },
-        { "calculate": "floor(datum.latitude * 2) / 2 + 0.25", "as": "lat_bin" },
-        {
-          "aggregate": [
-            { "op": "count", "as": "protected_area_count" },
-            { "op": "sum", "field": "area_ha", "as": "total_area_ha" }
-          ],
-          "groupby": ["lon_bin", "lat_bin"]
-        }
-      ],
-      "mark": { "type": "square", "filled": true, "size": 110, "opacity": 0.92 },
-      "encoding": {
-        "longitude": { "field": "lon_bin", "type": "quantitative" },
-        "latitude": { "field": "lat_bin", "type": "quantitative" },
-        "color": {
-          "field": "protected_area_count",
-          "type": "quantitative",
-          "title": "Number of protected areas",
-          "scale": { "scheme": "blues", "domain": [1, 300] },
-          "legend": { "orient": "bottom" }
-        },
-        "tooltip": [
-          { "field": "protected_area_count", "type": "quantitative", "title": "Protected areas in cell", "format": "," },
-          { "field": "total_area_ha", "type": "quantitative", "title": "Total area in cell (ha)", "format": ",.0f" }
-        ]
-      }
-    }
-  ],
-  "config": baseConfig
-};
-embed("#densityMap", densityMapSpec);
+embed("#animalStatusStack", animalStatusStackSpec);
