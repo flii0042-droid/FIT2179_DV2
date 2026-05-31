@@ -1,0 +1,70 @@
+# Australia's Animal Protection Areas Distribution
+
+This project is a data visualisation website created for **FIT2179 Data Visualisation 2**.  
+It explores the distribution of Australia's protected areas and asks whether protected land appears to align with animal conservation need.
+
+**Live website:** https://flii0042-droid.github.io/FIT2179_DV2/
+
+## Project Overview
+
+Australia has a large protected-area network, including national parks, nature reserves, Indigenous Protected Areas, conservation reserves and marine protected areas. However, protected areas are not evenly distributed across the country. Some inland regions contain fewer but much larger reserves, while coastal and south-eastern regions contain many smaller protected areas.
+
+This visualisation tells a three-part story:
+
+1. Where Australia's protected areas are located.
+2. Which protected-area types and management categories dominate.
+3. Whether protected-area coverage appears to match threatened animal conservation need.
+
+The final section connects protected-area patterns with threatened animal data to show that protected-area size alone does not fully explain animal protection.
+
+## Visualisation Features
+
+The website includes ten Vega-Lite visualisations:
+
+- Proportional symbol map of major protected areas across Australia
+- State and territory comparison of protected land area
+- Choropleth map of protected-area coverage by state
+- Bar chart of protected-area type contributions
+- Ranking chart of the largest protected areas
+- Interactive timeline of protected-area growth
+- Scatter plot comparing animal protection need and protected-area coverage
+- Bubble chart of threatened animal groups
+- Heatmap of threatened animal groups by state
+- Stacked percentage chart of animal threat severity by state
+
+The website uses narrative text, insight boxes, tooltips and an interactive timeline brush to guide readers through the story.
+
+## Data Sources
+
+The visualisation uses processed data from:
+
+- Collaborative Australian Protected Areas Database 2024, Department of Climate Change, Energy, the Environment and Water
+- Species and conservation summary data prepared from CSIRO Data Access Portal datasets
+- Public Australia and Australian state boundary GeoJSON / TopoJSON files
+
+## Technologies Used
+
+- HTML
+- CSS
+- JavaScript
+- Vega-Lite
+- Vega
+- Vega-Embed
+- GitHub Pages
+
+## Repository Structure
+
+```text
+.
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── data/
+│   └── data_processed/
+├── sketch.pdf
+└── README.md
+
+Author
+Created by Fan Li for FIT2179 Data Visualisation 2, Semester 1, 2026.
