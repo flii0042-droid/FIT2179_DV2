@@ -113,8 +113,8 @@ const mainMapTypePalette = {
 
 const mapSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 760,
-  "height": 450,
+  "width": 680,
+  "height": 500,
   "title": chartTitle(
     "Major Protected Areas Across Australia",
     "Filtered to areas of 50,000 hectares or larger and five main protected-area types."
@@ -122,8 +122,8 @@ const mapSpec = {
   "projection": {
     "type": "mercator",
     "center": [134, -27],
-    "scale": 620,
-    "translate": [380, 230]
+    "scale": 580,
+    "translate": [340, 260]
   },
   "layer": [
     australiaBase,
@@ -231,7 +231,7 @@ embed("#stateBar", stateBarSpec);
 const indigenousMapSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 620,
-  "height": 500,
+  "height": 420,
   "title": chartTitle(
     "Protected Area Coverage by State",
     "Normalised choropleth: protected-area hectares as a percentage of state land area."
@@ -349,7 +349,7 @@ embed("#typeBar", typeBarSpec);
 const largestRankSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": CHART_WIDTH,
-  "height": 430,
+  "height": 380,
   "title": chartTitle(
     "Top 20 Largest Protected Areas",
     "Dot position shows protected-area size; colour shows protected-area type."
@@ -418,7 +418,14 @@ const largestRankSpec = {
           "type": "nominal",
           "title": "Protected-area type",
           "scale": typePalette,
-          "legend": { "orient": "bottom", "columns": 2 }
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 4,
+            "labelLimit": 150,
+            "symbolSize": 80,
+            "title": "Protected-area type"
+          }
         },
         "tooltip": [
           { "field": "rank", "type": "quantitative", "title": "Rank" },
@@ -571,7 +578,7 @@ const animalGapSpec = {
       { "x": 10, "y": 300, "label": "High need, lower coverage", "anchor": "start" },
       { "x": 50, "y": 300, "label": "High need, higher coverage", "anchor": "end" },
       { "x": 10, "y": 10, "label": "Lower need, lower coverage", "anchor": "start" },
-      { "x": 5, "y": 10, "label": "Lower need, higher coverage", "anchor": "end" }
+      { "x": 50, "y": 10, "label": "Lower need, higher coverage", "anchor": "end" }
     ]
   },
   "mark": {

@@ -15,13 +15,13 @@ body {
 }
 
 .page {
-  width: min(1240px, calc(100% - 64px));
+  width: min(1180px, calc(100% - 56px));
   margin: 0 auto;
 }
 
 /* Hero */
 .hero {
-  padding: 46px 0 34px;
+  padding: 44px 0 36px;
   border-bottom: 3px solid #d3dfd3;
 }
 
@@ -35,17 +35,19 @@ body {
 }
 
 h1 {
-  max-width: 1080px;
+  max-width: 100%;
   margin: 0;
-  font-size: clamp(42px, 5vw, 62px);
+  font-size: clamp(36px, 3.8vw, 62px);
   line-height: 1.05;
   font-weight: 800;
   color: #173326;
+  white-space: normal;
+  letter-spacing: -0.01em;
 }
 
 .intro-title {
-  margin: 28px 0 10px;
-  font-size: 22px;
+  margin: 34px 0 12px;
+  font-size: 24px;
   line-height: 1.2;
   font-weight: 800;
   color: #173326;
@@ -53,15 +55,15 @@ h1 {
 
 .intro {
   max-width: 1080px;
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   font-size: 15.5px;
-  line-height: 1.5;
+  line-height: 1.52;
   color: #43564c;
 }
 
-/* Chapter blocks */
+/* Chapter intro blocks */
 .chapter {
-  padding: 34px 0 24px;
+  padding: 38px 0 26px;
   border-top: 1px solid #d9d1c4;
 }
 
@@ -79,9 +81,9 @@ h1 {
 }
 
 .chapter > h2 {
-  max-width: 1000px;
-  margin: 0 0 10px;
-  font-size: 32px;
+  max-width: 1080px;
+  margin: 0 0 12px;
+  font-size: 34px;
   line-height: 1.12;
   font-weight: 800;
   color: #173326;
@@ -89,46 +91,34 @@ h1 {
 
 .chapter > p {
   max-width: 1080px;
-  margin: 0;
+  margin: 0 0 12px;
   font-size: 15px;
   line-height: 1.55;
   color: #48594f;
 }
 
-.chapter > p + p {
-  margin-top: 12px;
-}
-
-/* How to Read */
 .method-note {
-  padding: 34px 0 24px;
+  padding: 34px 0 28px;
 }
 
 .method-note > h2 {
-  max-width: 1000px;
-  font-size: 28px;
-}
-
-.method-note > p {
-  max-width: 1120px;
-  font-size: 13.5px;
-  line-height: 1.45;
+  font-size: 30px;
 }
 
 .chapter-summary {
-  max-width: 1120px;
-  margin-top: 12px;
-  padding: 10px 12px;
+  max-width: 1080px;
+  margin-top: 14px;
+  padding: 11px 14px;
   background: #edf4f0;
   border-left: 4px solid #2a9d8f;
-  font-size: 13.5px;
-  line-height: 1.45;
+  font-size: 14px;
+  line-height: 1.5;
   font-weight: 600;
-  color: #3c5146;
+  color: #30483d;
 }
 
 .terms-box {
-  max-width: 1120px;
+  max-width: 1080px;
   margin-top: 12px;
   display: grid;
   gap: 8px;
@@ -138,10 +128,10 @@ h1 {
   margin: 0;
   padding: 9px 12px;
   background: #edf4f0;
-  border-left: 4px solid #8daf9b;
+  border-left: 4px solid #90b49d;
   font-size: 12px;
   line-height: 1.4;
-  color: #3c5146;
+  color: #43564c;
 }
 
 .terms-box strong {
@@ -149,35 +139,33 @@ h1 {
   color: #30483d;
 }
 
-/* Chart sections */
+/* Card-style chart sections */
 .section {
-  padding: 36px 0 46px;
-  border-top: 1px solid #d9d1c4;
+  margin: 34px 0;
+  padding: 26px;
+  border: 1px solid #ded8cc;
+  border-radius: 14px;
+  background: #fffdf8;
+  box-shadow: 0 14px 34px rgba(31, 49, 41, 0.08);
+
   display: grid;
-  grid-template-columns: minmax(310px, 420px) minmax(0, 790px);
+  grid-template-columns: minmax(300px, 380px) minmax(0, 1fr);
   grid-template-areas:
     "copy chart"
-    "outside chart";
-  grid-template-rows: auto auto;
-  column-gap: 42px;
-  row-gap: 14px;
+    "copy chart";
+  column-gap: 30px;
   align-items: start;
-  justify-content: center;
 }
 
 .section-copy {
   grid-area: copy;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 420px;
   padding: 0;
 }
 
 .section-title {
-  margin: 0;
-  font-size: 26px;
-  line-height: 1.16;
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.15;
   font-weight: 800;
   color: #173326;
 }
@@ -185,45 +173,27 @@ h1 {
 .section-copy > p:not(.insight) {
   margin: 0;
   font-size: 14.5px;
-  line-height: 1.52;
+  line-height: 1.55;
   color: #506157;
 }
 
-.insight {
-  margin: 6px 0 0;
-  padding: 12px 14px;
-  border-left: 4px solid #2a9d8f;
-  background: #edf4f0;
-  color: #30483d;
-  font-size: 13.5px;
-  line-height: 1.48;
-  text-align: left;
-}
-
-.section > .insight {
-  grid-area: outside;
-  max-width: 420px;
-}
-
-/* Chart card */
 .vis-container {
   grid-area: chart;
   width: 100%;
-  max-width: 790px;
-  justify-self: stretch;
-  align-self: start;
+  min-height: 0;
+  height: auto;
   margin: 0;
   padding: 16px 18px;
   background: #ffffff;
   border: 1px solid #d8ddd7;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
 .vis-container .vega-embed {
   max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,8 +205,8 @@ h1 {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .vega-embed summary {
@@ -248,18 +218,35 @@ h1 {
   font-size: 13px;
 }
 
+.insight,
+.section-copy .insight {
+  width: 100%;
+  margin: 18px 0 0;
+  padding: 13px 15px;
+  border-left: 4px solid #2a9d8f;
+  background: #edf4f0;
+  color: #30483d;
+  font-size: 13.5px;
+  line-height: 1.52;
+  text-align: left;
+}
+
 /* Conclusion */
 .conclusion {
   padding-bottom: 44px;
+}
+
+.conclusion p {
+  max-width: 1120px;
 }
 
 /* Footer */
 .footer-meta {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 48px;
+  gap: 44px;
   padding: 38px 0 64px;
-  margin-top: 18px;
+  margin-top: 28px;
   border-top: 1px solid #d9d1c4;
 }
 
@@ -278,162 +265,36 @@ h1 {
   color: #617064;
 }
 
-/* Tablet */
-@media (max-width: 1050px) {
+/* Responsive */
+@media (max-width: 980px) {
   .page {
-    width: min(100% - 32px, 980px);
+    width: min(100% - 28px, 1180px);
+  }
+
+  h1 {
+    white-space: normal;
+    font-size: 42px;
   }
 
   .section {
     grid-template-columns: 1fr;
     grid-template-areas:
       "copy"
-      "chart"
-      "outside";
-    gap: 18px;
-  }
-
-  .section-copy,
-  .section > .insight {
-    max-width: 100%;
-  }
-
-  .vis-container {
-    max-width: 100%;
-  }
-}
-
-/* Mobile */
-@media (max-width: 720px) {
-  .page {
-    width: min(100% - 24px, 980px);
-  }
-
-  .hero {
-    padding: 42px 0 30px;
-  }
-
-  h1 {
-    font-size: 36px;
-  }
-
-  .intro {
-    font-size: 15px;
-  }
-
-  .chapter {
-    padding: 30px 0 22px;
-  }
-
-  .chapter > h2 {
-    font-size: 28px;
-  }
-
-  .chapter > p {
-    font-size: 14.5px;
-  }
-
-  .section {
-    padding: 32px 0 40px;
+      "chart";
+    gap: 20px;
+    padding: 20px;
   }
 
   .section-title {
-    font-size: 24px;
-  }
-
-  .section-copy > p:not(.insight) {
-    font-size: 14px;
-  }
-
-  .insight {
-    font-size: 13px;
+    font-size: 25px;
   }
 
   .vis-container {
-    padding: 12px 10px;
+    padding: 14px 12px;
   }
 
   .footer-meta {
     grid-template-columns: 1fr;
-    gap: 22px;
+    gap: 24px;
   }
-}
-/* Make long narrative sections flatter and wider */
-.hero .intro,
-.method-note > p,
-.conclusion > p {
-  max-width: 1180px;
-  width: 100%;
-  font-size: 14px;
-  line-height: 1.38;
-  margin-top: 10px;
-}
-
-/* Introduction title tighter */
-.intro-title {
-  margin-top: 24px;
-  margin-bottom: 8px;
-  font-size: 21px;
-}
-
-/* Reduce hero vertical height */
-.hero {
-  padding-top: 38px;
-  padding-bottom: 28px;
-}
-
-/* Make How to Read section more compact */
-.method-note {
-  padding-top: 28px;
-  padding-bottom: 20px;
-}
-
-.method-note > h2 {
-  max-width: 1180px;
-  font-size: 26px;
-  margin-bottom: 10px;
-}
-
-.method-note .chapter-summary {
-  max-width: 1180px;
-  font-size: 12.5px;
-  line-height: 1.35;
-  padding: 9px 12px;
-  margin-top: 10px;
-}
-
-.terms-box {
-  max-width: 1180px;
-  gap: 7px;
-}
-
-.terms-box p {
-  font-size: 11.5px;
-  line-height: 1.3;
-  padding: 8px 12px;
-}
-
-/* Make conclusion flatter */
-.conclusion {
-  padding-top: 32px;
-  padding-bottom: 36px;
-}
-
-.conclusion > h2 {
-  max-width: 1180px;
-  font-size: 31px;
-  line-height: 1.12;
-  margin-bottom: 14px;
-}
-
-.conclusion > p {
-  margin-top: 12px;
-}
-/* Force main title into one line, but larger */
-.hero h1 {
-  max-width: none !important;
-  width: 100% !important;
-  white-space: nowrap !important;
-  font-size: clamp(40px, 4vw, 56px) !important;
-  line-height: 1.05 !important;
 }
